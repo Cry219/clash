@@ -7,7 +7,6 @@
 # DOMAIN-SUFFIX: 34
 # PROCESS-NAME: 1
 # TOTAL: 39
-payload:
   - DOMAIN-SUFFIX,poloemby.xyz
   - DOMAIN-SUFFIX,jmsooo.com
   - DOMAIN-SUFFIX,embymv.mebluesea.ddns.me
