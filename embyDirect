@@ -7,6 +7,6 @@
 # DOMAIN-SUFFIX: 34
 # PROCESS-NAME: 1
 # TOTAL: 39
-  - DOMAIN-SUFFIX,emby.prpr.cn.com
+  - DOMAIN,emby.prpr.cn.com
   - DOMAIN-SUFFIX,embyvip.misakaf.org
   - DOMAIN-SUFFIX,1.loseremby.org
