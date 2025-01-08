@@ -1,31 +1,3 @@
-proxy-providers:
-  aca:
-    type: http
-    path: "./proxy_provider/aca.yaml"
-    url: https://frieren.acaisbest.online/api/v1/client/subscribe?token=2902772aa5789ca3ddaee4d0e7be0407
-    interval: 3600
-    health-check:
-      enable: true
-      url: http://cp.cloudflare.com/generate_204
-      interval: 300
-  niceduck:
-    type: http
-    path: "./proxy_provider/niceduck.yaml"
-    url: https://sub.godya.cc/api/v1/client/hy?token=0280662e878b02ecef648f0299c3fd9a
-    interval: 3600
-    health-check:
-      enable: true
-      url: http://cp.cloudflare.com/generate_204
-      interval: 300
-  赔钱机场:
-    type: http
-    path: "./proxy_provider/赔钱机场.yaml"
-    url: https://xn--cp3a08l.com/api/v1/client/subscribe?token=18a904433859a9ae45e4f6115f3e95b7
-    interval: 3600
-    health-check:
-      enable: true
-      url: http://cp.cloudflare.com/generate_204
-      interval: 300
 redir-port: 7892
 tproxy-port: 7895
 port: 7890
