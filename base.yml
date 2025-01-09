@@ -1,3 +1,4 @@
+proxy-providers:
  ACA:
     type: http
     path: "./proxy_provider/ACA.yaml"
