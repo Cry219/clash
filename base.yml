@@ -17,7 +17,7 @@ dns:
 proxy-providers:
   aca:
     type: file
-    path: ./proxy_provider/aca.yaml
+    path: ./backup/ACA.yaml
     interval: 3600
     health-check:
       enable: true
@@ -25,7 +25,7 @@ proxy-providers:
       interval: 300
   niceduck:
     type: file
-    path: ./proxy_provider/niceduck.yaml
+    path: ./backup/好鸭.yaml
     interval: 3600
     health-check:
       enable: true
@@ -33,7 +33,7 @@ proxy-providers:
       interval: 300
   赔钱机场:
     type: file
-    path: ./proxy_provider/赔钱机场.yaml
+    path: ./backup/赔钱机场.yaml
     interval: 3600
     health-check:
       enable: true
