@@ -1,3 +1,25 @@
+proxy-providers:
+  aca:
+    path: "./proxy_provider/aca.yaml"
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://cp.cloudflare.com/generate_204
+      interval: 300
+  niceduck:
+    path: "./proxy_provider/niceduck.yaml"
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://cp.cloudflare.com/generate_204
+      interval: 300
+  赔钱机场:
+    path: "./proxy_provider/赔钱机场.yaml"
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://cp.cloudflare.com/generate_204
+      interval: 300
 redir-port: 7892
 tproxy-port: 7895
 port: 7890
