@@ -1,41 +1,42 @@
-mixed-port: 7890
-allow-lan: false
-bind-address: '*'
-mode: rule
-log-level: info
-external-controller: '127.0.0.1:9090'
-dns:
-    enable: true
-    ipv6: false
-    default-nameserver: [223.5.5.5, 119.29.29.29]
-    enhanced-mode: fake-ip
-    fake-ip-range: 198.18.0.1/16
-    use-hosts: true
-    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
-    fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
-    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
-proxy-providers:
-  aca:
-    type: file
-    path: ./backup/ACA.yaml
+ ACA:
+    type: http
+    path: "./proxy_provider/ACA.yaml"
+    url: https://frieren.acaisbest.online/api/v1/client/subscribe?token=2902772aa5789ca3ddaee4d0e7be0407
     interval: 3600
     health-check:
       enable: true
       url: http://cp.cloudflare.com/generate_204
       interval: 300
-  niceduck:
-    type: file
-    path: ./backup/好鸭.yaml
+  好鸭:
+    type: http
+    path: "./proxy_provider/好鸭.yaml"
+    url: https://sub.godya.cc/api/v1/client/hy?token=0280662e878b02ecef648f0299c3fd9a
     interval: 3600
     health-check:
       enable: true
       url: http://cp.cloudflare.com/generate_204
       interval: 300
   赔钱机场:
-    type: file
-    path: ./backup/赔钱机场.yaml
+    type: http
+    path: "./proxy_provider/赔钱机场.yaml"
+    url: https://pqjc.site/api/v1/client/subscribe?token=18a904433859a9ae45e4f6115f3e95b7
     interval: 3600
     health-check:
       enable: true
       url: http://cp.cloudflare.com/generate_204
       interval: 300
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9990'
+dns:
+    enable: true
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29]
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
+    fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
