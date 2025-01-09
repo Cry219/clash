@@ -23,56 +23,12 @@ proxy-providers:
       enable: true
       url: http://cp.cloudflare.com/generate_204
       interval: 300
-redir-port: 7892
-tproxy-port: 7895
-port: 7890
-socks-port: 7891
-secret: '123456'
-external-ui: "/usr/share/openclash/ui"
-ipv6: false
-interface-name: eth0
-geodata-mode: true
-geodata-loader: standard
-tcp-concurrent: true
-sniffer:
-  enable: true
-  parse-pure-ip: true
-  force-dns-mapping: true
-  override-destination: false
-  sniff:
-    QUIC:
-      ports:
-      - 443
-    TLS:
-      ports:
-      - 443
-      - 8443
-    HTTP:
-      ports:
-      - 80
-      - 8080-8880
-      override-destination: true
-  force-domain:
-  - "+.netflix.com"
-  - "+.nflxvideo.net"
-  - "+.amazonaws.com"
-  - "+.media.dssott.com"
-  skip-domain:
-  - "+.apple.com"
-  - Mijia Cloud
-  - dlg.io.mi.com
-  - "+.oray.com"
-  - "+.sunlogin.net"
-  - "+.push.apple.com"
-profile:
-  store-selected: true
-  store-fake-ip: true
 mixed-port: 7890
-allow-lan: true
+allow-lan: false
 bind-address: '*'
 mode: rule
 log-level: info
-external-controller: '127.0.0.1:9990'
+external-controller: '127.0.0.1:9090'
 dns:
     enable: true
     ipv6: false
@@ -82,4 +38,3 @@ dns:
     nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
-
