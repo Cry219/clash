@@ -1,5 +1,5 @@
 proxy-providers:
-  ACA:
+ ACA:
     type: http
     path: "./proxy_provider/ACA.yaml"
     url: https://frieren.acaisbest.online/api/v1/client/subscribe?token=2902772aa5789ca3ddaee4d0e7be0407
@@ -8,7 +8,7 @@ proxy-providers:
       enable: true
       url: http://cp.cloudflare.com/generate_204
       interval: 300
-  好鸭:
+ 好鸭:
     type: http
     path: "./proxy_provider/好鸭.yaml"
     url: https://sub.godya.cc/api/v1/client/hy?token=0280662e878b02ecef648f0299c3fd9a
@@ -17,7 +17,7 @@ proxy-providers:
       enable: true
       url: http://cp.cloudflare.com/generate_204
       interval: 300
-  赔钱机场:
+ 赔钱机场:
     type: http
     path: "./proxy_provider/赔钱机场.yaml"
     url: https://pqjc.site/api/v1/client/subscribe?token=18a904433859a9ae45e4f6115f3e95b7
