@@ -1,5 +1,5 @@
 proxy-providers:
- ACA:
+  ACA:
     type: http
     path: "./proxy_provider/ACA.yaml"
     url: https://frieren.acaisbest.online/api/v1/client/subscribe?token=2902772aa5789ca3ddaee4d0e7be0407
