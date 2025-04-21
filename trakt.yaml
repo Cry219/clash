@@ -1,3 +1,4 @@
 payload:
   - DOMAIN-KEYWORD,trakt.tv
   - DOMAIN-SUFFIX,tmdb.org
+  - DOMAIN-SUFFIX,chinadigitaltimes.net
