@@ -7,3 +7,4 @@ payload:
   - DOMAIN-SUFFIX,wiki.metacubex.one
   - DOMAIN-SUFFIX,nodeseek.com
   - DOMAIN-SUFFIX,embyplus.org
+  - IP-CIDR,193.122.114.13
